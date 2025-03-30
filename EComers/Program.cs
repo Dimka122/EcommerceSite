@@ -17,7 +17,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddControllers();
 builder.Services.AddSpaStaticFiles(configuration =>
 {
-    configuration.RootPath = "ClientApp/build";
+    configuration.RootPath = "client-app/build";
 });
 
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
@@ -40,7 +40,7 @@ app.UseEndpoints(endpoints =>
 
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "ClientApp";
+    spa.Options.SourcePath = "client-app";
     if (app.Environment.IsDevelopment())
     {
         spa.UseReactDevelopmentServer(npmScript: "start");
