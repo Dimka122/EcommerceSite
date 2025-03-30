@@ -1,7 +1,7 @@
-﻿
+﻿using Microsoft.AspNetCore.Identity;
+
 namespace EComers.Models
 {
-    using Microsoft.AspNetCore.Identity;
 
     public class ApplicationUser : IdentityUser
     {
